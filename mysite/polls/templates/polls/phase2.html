@@ -1,0 +1,21 @@
+{% extends "polls/welcome.html" %}
+{% load staticfiles %}
+{% block titlename %}phase1{% endblock %}
+{% block content %}
+
+<div style="background-image:url({%static 'polls/images/usamap.png'%}); height: 510px; width: 702px;">
+<div class="circle" ondrop="drop(event)" ondragover="allowDrop(event)"
+style="background-color: rgb(255, 153, 102); width: 32px; position: absolute; left: 635px; top: 322px; z-index: 2; height: 33px; text-align: center;"><br>
+</div>
+<div class="circle" ondrop="drop(event)" ondragover="allowDrop(event)"
+style="background-color: rgb(255, 153, 102); width: 35px; position: absolute; left: 592px; top: 381px; z-index: 2; height: 34px;"><br>
+</div>
+<div class="circle" ondrop="drop(event)" ondragover="allowDrop(event)"
+style="background-color: rgb(255, 153, 102); width: 35px; position: absolute; left: 541px; top: 398px; z-index: 2; height: 33px;"><br>
+</div>
+<div class="circle" ondrop="drop(event)" ondragover="allowDrop(event)"
+style="background-color: rgb(255, 153, 102); width: 33px; position: absolute; top: 582px; z-index: 2; height: 32px; left: 115px;"><br>
+</div>
+</div>
+
+{% endblock %}

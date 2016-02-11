@@ -1,0 +1,77 @@
+{% extends "polls/welcome.html" %}
+{% load staticfiles %}
+{% block titlename %}phase2{% endblock %}
+{% block content %}
+
+    <p id = {{artifact}} style="text-align: center;"><big><big>Match each national {{artifact}} to appropriate Country </big></big></p>
+    <br>
+    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br>
+    <br>
+    <table style="width: 753px; text-align: left; margin-left: auto; margin-right: auto; margin-top: -35px;"
+      border="0" cellpadding="1" cellspacing="1">
+      <tbody>
+        <tr>
+          <td style="height: 91px; width: 314.9px;"> 
+            <div id="div1" class="rect" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img style="width: 174px; height: 69px;" title="image1" id={{imgg.0.1}}
+                src={{'/static/polls/images/'|add:imgg.0.2}} draggable="true"
+                ondragstart="drag(event)"> </div>
+            
+          </td>
+          <td style="margin-left: 199px; width: 281.15px;">
+            <div id="div01" class="rect" ondrop="drop(event)" ondragover="allowDrop(event)">{{selectionn.0.0}}</div>
+          </td>
+          <td style="width: 32.85px;"><img id = "result1" style="width: 60px; height: 60px; visibility: hidden;"
+              title="right" alt="" src="{% static 'polls/images/right.png' %}">
+          </td>
+        </tr>
+        <tr>
+          <td> 
+            <div id="div2"  class="rect" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img style="width: 174px; height: 69px;" title="image2" id={{imgg.1.1}}
+                src={{'/static/polls/images/'|add:imgg.1.2}} draggable="true"
+                ondragstart="drag(event)"> </div>
+            
+          </td>
+          <td style="height: 174px;">
+            <div id="div02" class="rect" ondrop="drop(event)" ondragover="allowDrop(event)">{{selectionn.1.0}}</div>
+          </td>
+          <td><img id = "result2" style="width: 60px; height: 60px; visibility: hidden;"
+              title="right" alt="" src="{% static 'polls/images/right.png' %}">
+          </td>
+        </tr>
+        <tr>
+          <td style="height: 100px;"> 
+            <div id="div3" class="rect"  ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img style="width: 174px; height: 69px;" title="image3" id={{imgg.2.1}}
+                src={{'/static/polls/images/'|add:imgg.2.2}} draggable="true"
+                ondragstart="drag(event)"> </div>
+          
+          </td>
+          <td>
+            <div id="div03"  class="rect" ondrop="drop(event)" ondragover="allowDrop(event)">{{selectionn.2.0}}</div>
+          </td>
+          <td><img id = "result3" style="width: 60px; height: 60px;  visibility: hidden;"
+              title="right" alt="" src="{% static 'polls/images/right.png' %}"><br> 
+          </td>
+        </tr>
+        <tr>
+          <td style="height: 91px;"><br><br> 
+            <div id="div4"  class="rect" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img style="width: 174px; height: 69px;" title="image4" id={{imgg.3.1}}
+                src={{'/static/polls/images/'|add:imgg.3.2}} draggable="true"
+                ondragstart="drag(event)"> </div><br>
+          
+          </td>
+          <td><br>
+            <div id="div04" class="rect"  ondrop="drop(event)" ondragover="allowDrop(event)">{{selectionn.3.0}}</div>
+          </td>
+          <td><img id = "result4" style="width: 60px; height: 60px; visibility: hidden;"
+              title="right" alt="" src="{% static 'polls/images/right.png' %}"><br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <button class = "btn" style="position: absolute; left: 500px;" id="action1" onclick="firstaction_2()">Match it!</button>
+      <a  href="/static/polls/images/privatejet.jpg" data-lightbox="image-1" data-title="Congratulations for winning Phase2!!! You won a free trip around the world in private jet"><img id="1209" style="visibility:hidden;" src="{% static 'polls/images/ht34df68.jpg' %}"> </img></a>  
+{% endblock %}

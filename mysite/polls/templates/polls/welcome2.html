@@ -1,0 +1,41 @@
+{% extends "polls/base.html" %} {% block extras %}
+{% load staticfiles %}
+<text
+	style="color: black; height: 24px; font-weight: bold; text-decoration: underline; margin-top: 0px; text-align: right; position: relative; right: 500px;">
+	
+<a href="{% url 'polls:welcome'  %}"> <big>Home</big></a> 
+</text>
+<text
+	style="color: black; height: 24px; font-weight: bold; text-decoration: underline; position: relative; left: 500px; margin-top: 0px; text-align: right;">
+<a href="{% url 'polls:logout'  %}"> <big>Logout</big></a> </text>
+{% endblock %} {% block content %}
+<div
+	style="height: 51px;">
+
+	<p >
+		<big style="text-decoration: underline;"> <big
+			style="margin-top: 0px; height: 51px;"><big>Welcome !!!</big></big></big>
+	</p>
+</div>
+<br>
+<br>
+<div
+style="height: 312px; text-align: justify; margin-left: 540px; width: 312px;">
+<table style="text-align: center; width: 187px; height: 175px; "
+border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="vertical-align: top;"><button class="btn main" id="actionx" > Play </button></td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><button class="btn main" id="actiony" ">Stats</button></td>
+</tr>
+<tr>
+<td style="vertical-align: top;"><button class="btn main" id="actionz">Help !</button></td>
+</tr>
+</tbody>
+</table>
+&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a
+href="http://localhost:8000/game/phase1/"><br>
+</a></div>
+{% endblock %}

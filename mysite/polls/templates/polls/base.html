@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+{% load staticfiles %}
+<head>
+<title>{% block titlename %}home{% endblock %}</title>
+<link rel="stylesheet" type="text/css"	href="{% static 'polls/style.css' %}" />
+<link href="{% static 'polls/lightbox.css' %}" rel="stylesheet"/>
+<script src="{% static 'polls/jquery.js' %}"></script>
+<script src="{% static 'polls/scripts.js' %}"></script>
+<script src="{% static 'polls/register.js' %}"></script>
+</head>
+<body>
+<text>{% block vars %}{% endblock %}</text>
+{% block extras %}{% endblock %}
+	<div>
+		{% block title %} <big style="text-decoration: underline;"><big
+			style="font-family: Ubuntu Condensed;"><big><big><big>Game
+							of Maps</big></big></big></big></big> {% endblock %}
+	</div>
+	<br>
+	<div>{% block content %}{% endblock %}</div>
+
+    {% block form %}{% endblock %}
+<script src="{% static 'polls/lightbox.js' %}"></script>
+</body>
+</html>	

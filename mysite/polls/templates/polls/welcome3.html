@@ -1,0 +1,48 @@
+{% extends "polls/base.html" %} {% block extras %}
+{% load staticfiles %}
+<text
+	style="color: black; height: 24px; font-weight: bold; text-decoration: underline; margin-top: 0px; text-align: right; position: relative; right: 500px;">
+	
+<a href="{% url 'polls:welcome'  %}"> <big>Home</big></a> 
+</text>
+<text
+	style="color: black; height: 24px; font-weight: bold; text-decoration: underline; position: relative; left: 500px; margin-top: 0px; text-align: right;">
+<a href="{% url 'polls:logout'  %}"> <big>Logout</big></a> </text>
+{% endblock %} {% block content %}
+<div
+	style="height: 51px;">
+
+	<p >
+		<big style="text-decoration: underline;"> <big
+			style="margin-top: 0px; height: 51px;">Welcome !!!</big></big>
+	</p>
+</div>
+
+<br>
+
+<div style="height: 312px; text-align: justify; margin-left: 250px;">
+	<p>
+		Welcome to the game of maps.<br> Who ever wins&nbsp; will be
+		given a prize money of $ 1,000,000 and a free trip to Hawaiian
+		islands. So get ready !! <br>
+	</p>
+	<p>
+		The game is to be played in phases. <br>
+	</p>
+	<p>One after the other , totalling 5.</p>
+	<p>If you lose in any one of the games, you have to go back home
+		and can't play again.</p>
+	<p>If you win in a phase, you will be progressed on to the next
+		phase , till the final Round.</p>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	So, get Ready !!!!!!!!<br>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	Click button to continue&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;
+	&nbsp;&nbsp; 
+	<a href="{% url 'polls:phase1'  %}">  
+	<img style="width: 30px; height: 32px;" src="{% static 'polls/images/next.jpg' %}"/>
+	</a>
+</div>
+
+
+{% endblock %}

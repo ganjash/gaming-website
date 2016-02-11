@@ -1,0 +1,60 @@
+{% extends "polls/base.html" %} {% block extras %}
+{% load staticfiles %}
+{% load poll_extras %}
+<text
+	style="color: black; height: 24px; font-weight: bold; text-decoration: underline; margin-top: 0px; text-align: right; position: relative; right: 500px;">
+	
+<a href="{% url 'polls:welcome'  %}"> <big>Home</big></a> 
+</text>
+<text
+	style="color: black; height: 24px; font-weight: bold; text-decoration: underline; position: relative; left: 500px; margin-top: 0px; text-align: right;">
+<a href="{% url 'polls:logout'  %}"> <big>Logout</big></a> </text>
+{% endblock %} {% block content %}
+<div style="background-image: url({%static 'polls/images/stars_back.png' %}); background-position: center top; margin-left: 250px; width: 756px; margin-top: 0px; height: 400px;">
+<div style="height: 51px;">
+
+	<p>&nbsp;
+		<big style="text-decoration: underline; color: white;"> <big style="margin-top: 0px; height: 51px;"><big>Statistics!!!</big></big></big>
+	</p>
+</div><br>
+<br>
+<br>
+<table style="text-align: left; background-color: transparent; width: 413px; margin-left: 240px;" border="0" cellpadding="10" cellspacing="2">
+  <tbody style="width: 407px;">
+    <tr>
+      <td style="vertical-align: top; width: 128px; color: white;">Monuments</td>
+      <td style="vertical-align: top; width: 239px;">{% for i in stat.0|get_range %}
+      <img style = "width: 35px;height: 35px;" src ="{% static 'polls/images/star.png' %}"></img>
+      {% endfor %}
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 128px; color: white;">Flags<br>
+      </td>
+      <td style="vertical-align: top; width: 239px;">{% for i in stat.1|get_range %}
+            <img style = "width: 35px;height: 35px;" src ="{% static 'polls/images/star.png' %}"></img>
+            {% endfor %}
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 128px; color: white;">Animals<br>
+      </td>
+      <td style="vertical-align: top; width: 239px;">{% for i in stat.2|get_range %}
+            <img style = "width: 35px;height: 35px;" src ="{% static 'polls/images/star.png' %}"></img>
+            {% endfor %}
+      </td>
+    </tr>
+    <tr>
+      <td style="vertical-align: top; width: 128px; color: white;">Currency<br>
+      </td>
+      <td style="vertical-align: top; width: 239px;">{% for i in stat.3|get_range %}
+            <img style = "width: 35px;height: 35px;" src ="{% static 'polls/images/star.png' %}"></img>
+            {% endfor %}
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+
+</div>
+{% endblock %}

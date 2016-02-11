@@ -1,0 +1,108 @@
+{% extends "polls/welcome2.html" %}
+ {% load staticfiles %}
+  {% block titlename %}phase1{% endblock %}
+  {% load poll_extras %}
+   {% block content %}
+    {% csrf_token %}
+    
+<div style="width: 953px; left: 19px; top: 185px; position: absolute;">
+	<div style="height: 51px;">
+<p>&nbsp; &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp;&nbsp; &nbsp;
+&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <big
+style="text-decoration: underline;"><big
+style="margin-top: 0px; height: 51px;">Phase 1</big></big> &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<big style="text-decoration: underline;"><big
+style="margin-top: 0px; height: 51px;">Phase 2</big></big></p>
+</div>
+<br>
+	<div
+		id = "p1" style="height: 312px; z-index: 2; margin-left: 68px; width: 380px; position: absolute;">
+		<text style="">
+		<big>Countries</big></text>
+		<table
+			style="text-align: center; width: 187px; height: 175px;"
+			border="0" cellpadding="3" cellspacing="20">
+			<tbody>
+				<tr>
+					<td style="vertical-align: top;"><button class="{{but|get_item:'usa'}}"
+							style="width: 150px;" id="usa" >
+							USA</button></td>
+					<td style="vertical-align: top;"><button class="{{but|get_item:'egypt'}}"
+							style="width: 150px;" id="egypt" >
+							Egypt</button></td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top;"><button class="{{but|get_item:'canada'}}"
+							style="width: 150px;" id="canada" >Canada</button></td>
+					<td style="vertical-align: top;"><button class="{{but|get_item:'russia'}}"
+							style="width: 150px;" id="russia" >
+							Russia</button></td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top; background-color: transparent;"><button
+							class="{{but|get_item:'uk'}}" id="uk" style="width: 150px;"
+							>UK</button></td>
+					<td style="vertical-align: top;"><button class="{{but|get_item:'china'}}"
+							style="width: 150px;" id="china" >
+							China</button></td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top;"><button class="{{but|get_item:'france'}}"
+							style="width: 150px;" id="france" >
+							France</button></td>
+					<td style="vertical-align: top;"><button class="{{but|get_item:'india'}}"
+							style="width: 150px;" id="india" >
+							India</button></td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top;"><button class="{{but|get_item:'italy'}}"
+							style="width: 150px;" id="italy" >
+							Italy</button></td>
+					<td style="vertical-align: top;"><button class="{{but|get_item:'aust'}}"
+							style="width: 150px;" id="aust" >
+							Australia</button></td>
+				</tr>
+			</tbody>
+		</table>
+		&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; <a
+			href="http://localhost:8000/game/phase1/"><br> </a>
+	</div>
+	<div
+		id = "p2" style="margin-left: 552px; z-index: 2; position: absolute; left: 192px; right: auto; width: 190px;">
+		<text> <big>Artifacts</big></text>
+		<table style="text-align: left; width: 100px;" border="0"
+			cellpadding="2" cellspacing="20">
+			<tbody>
+				<tr>
+					<td style="vertical-align: top;"><button class="{{but|get_item:'monument'}}"
+							style="width: 150px;" id="monument" >
+							Monuments</button></td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top;"><button class="{{but|get_item:'flag'}}"
+							style="width: 150px;" id="flag" >
+							Flags</button></td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top;"><button class="{{but|get_item:'currency'}}"
+							style="width: 150px;" id="currency" >
+							Currency</button></td>
+				</tr>
+				<tr>
+					<td style="vertical-align: top;"><button class="{{but|get_item:'animal'}}"
+							style="width: 150px;" id="animal" >
+							Animals</button></td>
+				</tr>
+			</tbody>
+		</table>
+		<br>
+	</div>
+</div>
+{% endblock %}

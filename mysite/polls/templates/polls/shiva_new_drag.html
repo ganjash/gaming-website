@@ -1,0 +1,71 @@
+{% extends "polls/base.html" %} {% block extras %}
+{% load staticfiles %}
+{% block titlename %}phase1{% endblock %}
+{% block content %}
+    
+    <p style="text-align: center;">Match the artifacts to the appropriate
+      Country:</p>
+    <br>
+    &nbsp;&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; <br>
+    <br>
+    <table style="width: 639px; text-align: left; margin-left: auto; margin-right: auto; margin-top: -35px;"
+      border="0" cellpadding="1" cellspacing="1">
+      <tbody>
+        <tr>
+          <td style="height: 91px; width: 314.9px;"> <br>
+            <div id="div01" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img style="width: 174px; height: 69px;" title="image1" id="image1"
+                src="file:///home/harsha/Desktop/shiva/ticket_russia.png" draggable="true"
+                ondragstart="drag(event)"> </div>
+            <br>
+          </td>
+          <td style="margin-left: 199px; width: 281.15px;">
+            <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">USA</div>
+          </td>
+          <td style="width: 32.85px;"><br>
+          </td>
+        </tr>
+        <tr>
+          <td> <br>
+            <div id="div02" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img style="width: 174px; height: 69px;" title="image1" id="image2"
+                src="file:///home/harsha/Desktop/shiva/ticket_uk.png" draggable="true"
+                ondragstart="drag(event)"> </div>
+            <br>
+          </td>
+          <td style="height: 174px;">
+            <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)">RUSSIA</div>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <td style="height: 100px;"> <br>
+            <div id="div03" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img style="width: 174px; height: 69px;" title="image1" id="image3"
+                src="file:///home/harsha/Desktop/shiva/ticket_usa.png" draggable="true"
+                ondragstart="drag(event)"> </div>
+          </td>
+          <td>
+            <div id="div3" ondrop="drop(event)" ondragover="allowDrop(event)">UK</div>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <td style="height: 91px;"> <br>
+            <div id="div04" ondrop="drop(event)" ondragover="allowDrop(event)">
+              <img style="width: 174px; height: 69px;" title="image1" id="image4"
+                src="file:///home/harsha/Desktop/shiva/shiva1.png" draggable="true"
+                ondragstart="drag(event)"> </div>
+          </td>
+          <td>
+            <div id="div4" ondrop="drop(event)" ondragover="allowDrop(event)">WORLD</div>
+          </td>
+          <td><br>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+{% endblock %}

@@ -1,0 +1,109 @@
+body {
+  background-image: url("images/map_poster.jpg") ;
+  background-text: "hiiii";
+  background-position: center top;
+  font-family: Arial,Helvetica,sans-serif;
+  font-weight: normal;
+  background-color: transparent;
+  text-align: center;
+  color: black;
+  font-size: large;
+}
+div {
+  text-align: center;
+}
+/*old_working
+ #div1,#div2,#div3,#div4,#div01,#div02,#div03,#div04 {width:200px;height:70px;padding:10px;border:5px solid #333;} 
+*/
+
+.rect {
+	width:200px;height:70px;padding:10px;border:5px solid #333;
+}
+
+.circle {
+	width:45px;height:45px;border:2px solid #333
+}
+/*#div1,#div2,#div3,#div4,#div01,#div02,#div03,#div04 {width:45px;height:45px;padding:5px;border:2px solid #333;}
+/*.class drag
+{width:200px;height:70px;padding:10px;border:5px solid #333;}
+*/
+.circle {
+border-top-left-radius: 50%;
+border-top-right-radius: 50%;
+border-bottom-right-radius: 50%;
+border-bottom-left-radius: 50%;
+
+}
+.circle.map{
+	background-color: rgb(255, 153, 102); width: 33px; position: absolute; z-index: 2; height: 33px;
+}
+
+.btn {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}
+
+.btn2 {
+  background: #E7FE11;
+  background-image: -webkit-linear-gradient(top, #FBFF46, #ACB029);
+  background-image: -moz-linear-gradient(top, #FBFF46, #ACB029);
+  background-image: -ms-linear-gradient(top, #FBFF46, #ACB029);
+  background-image: -o-linear-gradient(top, #FBFF46, #ACB029);
+  background-image: linear-gradient(to bottom, #FBFF46, #ACB029);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+
+.btn2:hover {
+
+  background: #FBEF0D;
+  background-image: -webkit-linear-gradient(top, #F6FB1E, #C9CE2D);
+  background-image: -moz-linear-gradient(top, #F6FB1E, #C9CE2D);
+  background-image: -ms-linear-gradient(top, #F6FB1E, #C9CE2D);
+  background-image: -o-linear-gradient(top, #F6FB1E, #C9CE2D);
+  background-image: linear-gradient(to bottom, #F6FB1E, #C9CE2D);
+  text-decoration: none;
+}
+
+.btn.main{
+	width: 170px;
+	border-radius: 10px;
+	padding: 20px 20px;
+}
+
+.pagemenu {
+	border-radius: 10px;
+	padding: 12px 20px;
+	color: #fff;
+	text-shadow: 1px 1px 1px #444;
+	letter-spacing: 1px;
+}

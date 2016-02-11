@@ -1,0 +1,23 @@
+{% extends "polls/base.html"  %}
+{% block content %}
+	<div
+		style="margin-top: 65px; height: 60px;">
+		<big style="text-decoration: underline;"><big
+			style="color: black; font-weight: bold;"><big> </big></big><big
+			style="color: black; font-weight: bold;"><big>Register</big></big><big
+			style="color: black; font-weight: bold;"><big><br> </big></big></big>
+	</div>
+
+	<br>
+
+	<div
+		style="margin-top: 11px; height: 44px;">
+		<!--  <a href="{% url 'polls:identify' %}">Login direct</a> -->
+		<a href="{% url 'polls:detail'  %}"> <big
+			style="text-decoration: underline;"><big
+				style="color: black; font-weight: bold;"><big
+					onmouseover="onlink(this)" onmouseout="offlink(this)">Login<br>
+				</big></big></big>
+		</a>
+	</div>
+{% endblock %}

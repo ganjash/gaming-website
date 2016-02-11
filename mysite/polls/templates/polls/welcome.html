@@ -1,0 +1,85 @@
+{% extends "polls/base.html" %} {% block extras %}
+{% load staticfiles %}
+<text
+	style="color: black; height: 24px; font-weight: bold; text-decoration: underline; margin-top: 0px; text-align: right; position: relative; right: 500px;">
+	
+<a href="{% url 'polls:welcome'  %}"> <big>Home</big></a> 
+</text>
+<text
+	style="color: black; height: 24px; font-weight: bold; text-decoration: underline; position: relative; left: 500px; margin-top: 0px; text-align: right;">
+<a href="{% url 'polls:logout'  %}"> <big>Logout</big></a> </text>
+{% endblock %} {% block content %}
+
+<br>
+
+<div >
+<div style="text-align: justify; margin-left: 170px; background-color: beige; border-radius: 25px; padding: 30px 30px 10px; width: 900px;">
+<p style="text-align: center; font-weight: bold;"> <big> <big
+style="margin-top: 0px; height: 51px;">How to play ?</big></big></p>
+<p style="text-align: center;"><big style="text-decoration: underline;"><br>
+</big></p>
+<p style="text-align: center;"><big style="text-decoration: underline;">Phase
+1</big><br>
+</p>
+<p>Matching the artifacts.<br>
+</p>
+<p> There are total of four artifacts in each country:<br>
+1.Monument<br>
+2.National Flag<br>
+3.Currency<br>
+4.National Animal</p>
+These artifacts are designated with a moving number on the side of the
+image this moveable number goes in to the appropriate circle in the map
+once all the numbers are in the map circles we can click on the blue
+button below to place it if the answers are correct the user will be
+proceeding to next country or level if the answer is wrong the player
+goes back to main screen after system shows which once are wrong and
+he/she needs to play the same country or level again. <br>
+<br>
+Monument&nbsp;&nbsp;&nbsp;&nbsp; :&nbsp;&nbsp;&nbsp; 1 &nbsp;&nbsp;
+This number goes where that particular monument is located<br>
+National Flag : &nbsp;&nbsp; 2 &nbsp;&nbsp; This number goes where the
+capital of the country
+located.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp; &nbsp; in&nbsp; the country.<br>
+Currency &nbsp; &nbsp;&nbsp;&nbsp;&nbsp; : &nbsp;&nbsp; 3 &nbsp;&nbsp;
+This number goes where the currency is made in the country.<br>
+Animal&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+:&nbsp;&nbsp;&nbsp; 4 &nbsp;&nbsp; This number goes where that
+particular kind of bird or animal is&nbsp; <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp; mostly found in the country.<br>
+<br>
+For each country the player will be unlocking a free flight ticket to
+that country after finishing the level.<br>
+<br>
+<br>
+<div style="text-align: center;"><big
+style="text-decoration: underline;">Phase 2<big><big></big></big></big><br>
+</div>
+<p>Matching the countries.<br>
+</p>
+<p>If the players finishes the first phase of the game then the player
+proceeds to the second phase of the game, in the second phase the
+player needs to remember all the flags, monuments, national birds or
+animals and national flags which he/she placed properly in the first
+phase.</p>
+<p>In this phase of the game players are given with country names on
+one side and depending on the level national flags, monuments, currency
+or national birds or animals on the other side and drop box are placed
+in the middle.</p>
+<p>Players goal is to match the artifact which belongs to that
+particular country and then after matching all the artifacts the player
+needs to press match it if the answer is correct the player gets a gold
+star and if the answer is wrong player gets a red star and he/she needs
+to repeat the level again and if he/she matches all the artifact
+correctly they will proceed to next level. When the user get all the 20
+stars he/she will be earning a charted flight.&nbsp;&nbsp; <br>
+</p>
+ 
+	</div>
+</div>
+
+<br><br>
+{% endblock %}
