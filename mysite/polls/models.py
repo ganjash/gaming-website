@@ -1,3 +1,6 @@
+# author sri harsha ganja
+# ganjash
+
 from django.db import models
 # Create your models here.
 
