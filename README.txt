@@ -1,7 +1,20 @@
 ------------------------------------------- GAME of Maps ----------------------------------------
+Installations required:
+python 2.7
+python-pip
+Django v1.8
 
-You need password to login to the game.
+Starting the program:
+go to directory mysite/
+run: python manage.py runserver localhost:8000/
 
+Open the url:
+http://localhost:8000/game
+
+(Password below is not neccessary, bypassed it to allow everyone)
+
+
+Login page
 username: harsha
 password: harsha1234
 
